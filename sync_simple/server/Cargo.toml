@@ -1,0 +1,8 @@
+[package]
+name = "sync_server"
+version = "0.1.0"
+authors = ["Kenjiro Nakayama <nakayamakenjiro@gmail.com>"]
+
+[dependencies]
+hello_api = { path = "../proto" }
+tarpc = "0.9.0"
