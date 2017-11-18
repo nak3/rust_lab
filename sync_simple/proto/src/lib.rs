@@ -4,6 +4,17 @@
 #[macro_use]
 extern crate tarpc;
 
+#[macro_use]
+extern crate serde_derive;
+
 service! {
-    rpc hello(name: String) -> String;
+    rpc list() -> Vec<Person>;
+    rpc add(naem: String, age: u64);
+}
+
+#[derive(Clone, Debug)]
+#[derive(Serialize, Deserialize)]
+pub struct Person {
+    pub name: String,
+    pub age: u64,
 }

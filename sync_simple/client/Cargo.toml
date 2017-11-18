@@ -1,9 +1,9 @@
 [package]
 name = "sync_cli"
 version = "0.1.0"
-authors = ["Adam Wright <shaladdle@gmail.com>"]
+authors = ["Kenjiro Nakayama <nakayamakenjiro@gmail.com>"]
 
 [dependencies]
 clap = "2.2"
-hello_api = { path = "../proto" }
+service_api = { path = "../proto" }
 tarpc = "0.9.0"

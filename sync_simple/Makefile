@@ -5,4 +5,9 @@ all:
 		echo "building $$target..."; \
 		pushd $$target && cargo build && popd; \
 	done
-	
+
+run_server:
+	./server/target/debug/sync_server
+
+clean:
+	rm -rf */target/
