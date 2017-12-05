@@ -1,0 +1,7 @@
+[package]
+name = "introspect"
+version = "0.1.0"
+authors = ["Kenjiro Nakayama <nakayamakenjiro@gmail.com"]
+
+[target.'cfg(target_os="linux")'.dependencies]
+dbus = "0.6.0"
